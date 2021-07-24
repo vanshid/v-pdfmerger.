@@ -1,5 +1,5 @@
 import PyPDF2
-with open("dummy.pdf","rb") as f:
+with open("van_dybala.pdf","rb") as f:
 #print(dir(PyPDF2))
  reading = PyPDF2.PdfFileReader(f)
  print(reading.numPages)
@@ -9,7 +9,7 @@ with open("dummy.pdf","rb") as f:
 
 writer = PyPDF2.PdfFileWriter()
 writer.addPage(page)
-with open("crooked.pdf","wb") as binaryfile:
+with open("dybalacrooked.pdf","wb") as binaryfile:
     writer.write(binaryfile)
 
 	
